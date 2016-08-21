@@ -30,5 +30,10 @@ module.exports = webpackMerge(commonConfig, {
         'ENV': JSON.stringify(ENV)
       }
     })
-  ]
+  ],
+
+  tslint: {
+    emitErrors: true,
+    failOnHint: true
+  }
 });

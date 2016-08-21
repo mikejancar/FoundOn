@@ -2,6 +2,7 @@
 /node_modules
 /typings
 /.karma
+/dist
 
 # Files
 npm-debug.log

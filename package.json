@@ -6,6 +6,7 @@
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "build-dev": "rimraf dist && webpack --config config/webpack.dev.js --progress --profile --bail",
     "postinstall": "typings install"
   },
   "license": "MIT",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "angular2-template-loader": "^0.4.0",
+    "codelyzer": "0.0.28",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
@@ -42,6 +44,8 @@
     "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",
     "ts-loader": "^0.8.1",
+    "tslint": "^3.14.0",
+    "tslint-loader": "^2.1.5",
     "typescript": "^1.8.10",
     "typings": "^1.0.4",
     "webpack": "^1.13.0",
